@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "logging-actions"
-version = "0.1.0"
-description = ""
+version = "0.1.2"
+description = "For easy configuration of `logging.Logger`s with `argparse.Action`s."
 authors = ["Aatif Syed <aatifsyedyp@gmail.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
