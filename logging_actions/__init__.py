@@ -59,5 +59,6 @@ def log_level_action(logger: logging.Logger):
             if not isinstance(values, str):
                 raise TypeError
             logger.setLevel(level=values.upper())
+            setattr(namespace, self.dest, values)
 
     return LogLevelAction
