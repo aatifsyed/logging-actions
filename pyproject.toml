@@ -1,17 +1,13 @@
 [tool.poetry]
 name = "logging-actions"
-version = "0.1.3"
+version = "0.1.4"
 description = "For easy configuration of `logging.Logger`s with `argparse.Action`s."
 authors = ["Aatif Syed <aatifsyedyp@gmail.com>"]
 readme = "README.md"
 
-[tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
-black = "^21.6b0"
-mypy = "^0.910"
+dependencies = { python="^3.8" }
+dev-dependencies = { pytest="^5.2", black="^21.6b0", mypy="^0.910" }
+include = ["logging_actions/py.typed"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
