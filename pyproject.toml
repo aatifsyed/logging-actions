@@ -1,14 +1,19 @@
 [tool.poetry]
 name = "logging-actions"
-version = "0.1.4"
+version = "0.1.5"
 description = "For easy configuration of `logging.Logger`s with `argparse.Action`s."
 authors = ["Aatif Syed <aatifsyedyp@gmail.com>"]
 readme = "README.md"
 
-dependencies = { python="^3.8" }
-dev-dependencies = { pytest="^5.2", black="^21.6b0", mypy="^0.910" }
+dependencies = { python = "^3.8" }
+dev-dependencies = { pytest = "^6.0", black = "^21.6b0", mypy = "^0.910" }
 include = ["logging_actions/py.typed"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+addopts = ["--doctest-glob=README.md"]
