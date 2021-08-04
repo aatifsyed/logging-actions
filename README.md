@@ -1,3 +1,10 @@
+<div align="center">
+
+[![pypi](https://img.shields.io/pypi/v/logging-actions)](https://pypi.org/project/logging-actions/)
+[![github](https://img.shields.io/static/v1?label=&message=github&color=grey&logo=github)](https://github.com/aatifsyed/logging-actions)
+
+</div>
+
 # `logging-actions`
 For easy configuration of `logging.Logger`s with `argparse.Action`s.
 
