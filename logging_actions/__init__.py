@@ -34,7 +34,9 @@ def log_level_action(logger: logging.Logger):
                 choices = ["critical", "error", "warning", "info", "debug", "notset"]
             if default is not None:
                 logger.setLevel(default.upper())
-                if help is not None:
+                if help is None:
+                    help = f"(default: {default})"
+                else:
                     help = f"{help} (default: {default})"
             super().__init__(
                 option_strings,
